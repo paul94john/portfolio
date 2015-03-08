@@ -1,0 +1,28 @@
+.top{
+  background: #eec00a;
+  text-align: left;
+  text-align: center;
+}
+
+.top h1{
+  color:#fff;
+  font-size: 120px;
+  line-height: 1em;
+  margin-left: 70px;
+  margin-top: 75px;
+  text-align: left;
+}
+
+.top p{
+  color:#fff;
+  font-size: 75px;
+  line-height: 1em;
+  margin-left: 70px;
+  text-align: left;
+  margin-bottom: 220px
+}
+
+.top img{
+  position: absolute;
+  bottom: 30px;
+}
