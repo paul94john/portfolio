@@ -5,12 +5,12 @@
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    $to = "xxxx@xxxx.com"; // Replace xxxx@xxxx.com with your email address (mandatory!) 
-    $subject = "Hello"; // Choose a custom subject (not mandatory)
+    $to = "paul94john@gmail.com"; // Replace xxxx@xxxx.com with your email address (mandatory!) 
+    $subject = "Hello from website"; // Choose a custom subject (not mandatory)
 
     $body = "You have received a message from " . $name . " (" . $email . "):\n\n" . $message;
 
-    $from = "From: Beetle Template"; // Replace "Beetle Template" with your site name (not mandatory)   
+    $from = "From: thatsmywork"; // Replace "Beetle Template" with your site name (not mandatory)   
     $headers = "From:" . $from . "\r\n";
     $headers .= "Reply-To: " . $email . "\r\n";
     $headers .= "X-Mailer: PHP/" . phpversion();    
@@ -39,8 +39,9 @@
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    $to = 'xxxx@xxxx.com'; // Replace xxxx@xxxx.com with your email address (mandatory!) 
-    $subject = 'Hello'; // Choose a custom subject (not mandatory)
+    $to = "paul94john@gmail.com"; // Replace xxxx@xxxx.com with your email address (mandatory!) 
+    $subject = "Hello from website"; // Choose a custom subject (not mandatory)
+
 
     $body = '<html><body>';
     $body .= '<em style="color: #999;">You have received a message from <strong>' . $name . '</strong> (' . $email . '):</em>';
