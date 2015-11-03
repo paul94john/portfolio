@@ -75,7 +75,7 @@
                         <li class="menu-item"><a href="#xp">Experience</a></li>
                         <li class="menu-item"><a href="#work">Work</a></li>
                         <li class="menu-item"><a href="#contact">Contact</a></li>
-                        <li class="menu-item high"><a href="img/cv.jpg" target="_blank" onClick="_gaq.push ([‘_trackEvent’,’cv’,’topbar’,’cv.jpg’,10]);" download>Get cv</a></li>
+                        <li class="menu-item high"><a href="img/cv.jpg" target="_blank" onClick="ga('send', 'event', 'CV', 'play', 'Fall Campaign');" download>Get cv</a></li>
                     </ul>
                 </nav>
             </div>
@@ -155,7 +155,7 @@
             <section class="row section call-to-action">
                 <div class="row-content buffer even">
                     <p>Want to know more ?</p>
-                    <a class="button aqua" href="img/cv.jpg" target="_blank" onClick="_gaq.push ([‘_trackEvent’,’cv’,’start’,’cv.jpg’,10]);" download>Get cv</a>
+                    <a class="button aqua" href="img/cv.jpg" target="_blank" onClick="ga('send', 'event', 'CV', 'play', 'Fall Campaign');" download>Get cv</a>
                 </div>
             </section>
             <section class="row section text-dark" style="padding:20px;background-color:#fff;">
@@ -225,7 +225,7 @@
                     <div class="timeline-label column six">
                         <h4>Work experience</h4>
                         <p>These are the companies that I have worked with, I have got to learn and explore a lot of new things </p>
-                        <a href="http://in.linkedin.com/in/paulvjohn" target="_blank" class="button transparent aqua">View on Linkedin</a>
+                        <a href="http://in.linkedin.com/in/paulvjohn" target="_blank" class="button transparent aqua"  onClick="ga('send', 'event', 'linkedin', 'play', 'Fall Campaign');">View on Linkedin</a>
                     </div>
                     <!-- timeline-label -->
                     <div class="timeline column six last">
@@ -526,7 +526,7 @@
                         <section class="row section call-to-action">
                             <div class="row-content buffer even animation">
                                 <p>Want to know more ?</p>
-                                <a class="button aqua" href="img/cv.jpg" target="_blank" onClick="_gaq.push ([‘_trackEvent’,’cv’,’end’,’cv.jpg’,10]);" download>Get cv</a>
+                                <a class="button aqua" href="img/cv.jpg" target="_blank" onClick="ga('send', 'event', 'CV', 'play', 'Fall Campaign');" download>Get cv</a>
                             </div>
                         </section>
                     </div>
@@ -570,38 +570,8 @@
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script>
-    $(document).ready(function() {
-        $('#send').click(function() {
-            $(this).val('Sending ...');
-            $('#success p').remove();
-            $.post('contact/contact.php', $('#contact-form').serialize(), function(response) {
-                $('#success').html(response);
-                //$('#success').hide('slow');
-                $('#send').val('Send a Message');
-            });
-            return false;
-        });
-    });
-    </script>
-    <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-54110525-2', 'auto');
-    ga('send', 'pageview');
-    </script>
-    <!-- Please call pinit.js only once per page -->
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
     <div id="fb-root"></div>
     <script>
     (function(d, s, id) {
@@ -613,6 +583,15 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
     </script>
+
+    <!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-54110525-2', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
 </body>
 
 </html>
