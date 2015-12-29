@@ -64,7 +64,7 @@
         <div class="row">
             <div class="nav-inner row-content buffer-left buffer-right even clear-after">
                 <div id="brand">
-                    <h1 class="reset"><a href="#top">                                <img id="default-logo" src="finger.png" alt="Brand Name">
+                    <h1 class="reset"><a href="#home">                                <img id="default-logo" src="finger.png" alt="Brand Name">
             <img id="retina-logo" src="finger-retina.png" alt="Brand Name">
             Portfolio</a></h1>
                 </div>
@@ -84,7 +84,7 @@
         </div>
         <!-- row -->
     </header>
-    <main role="main">
+    <main role="main" id="home">
         <div id="intro-wrap">
             <div id="intro" class="preload" data-autoplay="5450" data-navigation="true" data-pagination="true" data-transition="fade">
                 <div class="intro-item" style="background-color: #172c57;">
@@ -159,31 +159,8 @@
                     <a class="button aqua" href="img/cv.jpg" target="_blank" onClick="ga('send', 'event', 'CV', 'play', 'Fall Campaign');" download>Get cv</a>
                 </div>
             </section>
-            <section class="row section text-dark" style="padding:20px;background-color:#fff;">
-                <div class="column four centertxt">
-                    <div class="big-icon aqua"><i class="icon-note"></i></div>
-                    <div class="big-icon-text clear-after">
-                        <h4>Research</h4>
-                        <p class="text-s">All my designs have a good concrete research base, which enables me to develop memorable user experiences and provide a data-driven justification for the same.</p>
-                    </div>
-                </div>
-                <div class="column four centertxt">
-                    <div class="big-icon aqua"><i class="icon-trophy"></i></div>
-                    <div class="big-icon-text clear-after">
-                        <h4>Gamification</h4>
-                        <p class="text-s">Did immense amount of research, exploration and even have applied many elements of gamification to tackle various problem on different projects.</p>
-                    </div>
-                </div>
-                <div class="column four last centertxt">
-                    <div class="big-icon aqua"><i class="icon-magic-wand"></i></div>
-                    <div class="big-icon-text clear-after">
-                        <h4>Delightful details</h4>
-                        <p class="text-s">Interaction can go a long way in binding the user with the product. Simple and logical interactions makes the experience intuitive and engaging.</p>
-                    </div>
-                </div>
-            </section>
-            <section class="row section text-dark" id="Interests" style="background-color: #ecf0f1;">
-                <div class="row-content buffer even clear-after">
+            <section id="Interests" style="padding:20px;background-color:#fff;">
+              <div class="row-content buffer even clear-after">
                     <div class="section-title">
                         <h3>Interests</h3></div>
                     <div class="chart" data-percent="91" data-bar-color="#00B4CC" data-animate="2000">
@@ -219,13 +196,39 @@
                     </div>
                     <!-- chart -->
                 </div>
+            <section class="row section text-dark" style="padding:20px;background-color:#fff;">
+                <div class="column four centertxt">
+                    <div class="big-icon aqua"><i class="icon-note"></i></div>
+                    <div class="big-icon-text clear-after">
+                        <h4>Research</h4>
+                        <p class="text-s">All my designs have a good concrete research base, which enables me to develop memorable user experiences and provide a data-driven justification for the same.</p>
+                    </div>
+                </div>
+                <div class="column four centertxt">
+                    <div class="big-icon aqua"><i class="icon-trophy"></i></div>
+                    <div class="big-icon-text clear-after">
+                        <h4>Gamification</h4>
+                        <p class="text-s">Did immense amount of research, exploration and even have applied many elements of gamification to tackle various problem on different projects.</p>
+                    </div>
+                </div>
+                <div class="column four last centertxt">
+                    <div class="big-icon aqua"><i class="icon-magic-wand"></i></div>
+                    <div class="big-icon-text clear-after">
+                        <h4>Delightful details</h4>
+                        <p class="text-s">Interaction can go a long way in binding the user with the product. Simple and logical interactions makes the experience intuitive and engaging.</p>
+                    </div>
+                </div>
+            </section>
+            </section>
+            <section class="row section text-dark" id="Interests" style="background-color: #ecf0f1;">
+              
             </section>
             <!-- skill -->
             <section class="row section text-light" id="xp" style="background-color:#333;">
                 <div class="row-content buffer even clear-after">
                     <div class="timeline-label column six">
                         <h4>Work experience</h4>
-                        <p>These are the companies that I have worked with, I have got to learn and explore a lot of new things </p>
+                        <p>These are the companies that I have worked with where I got to learn and expriment with new things.</p>
                         <a href="http://in.linkedin.com/in/paulvjohn" target="_blank" class="button transparent aqua"  onClick="ga('send', 'event', 'linkedin', 'play', 'Fall Campaign');">View on Linkedin</a>
                     </div>
                     <!-- timeline-label -->
@@ -238,7 +241,7 @@
                                 <div class="experience-info clear-after">
                                     <h5>Caspo LLC</h5>
                                     <div class="role">Chief Design Officer</div>
-                                    <p>June 2015 – October 2015
+                                    <p>June 2015 – Novemeber 2015
                                         <br>Illinois, United States</p>
                                 </div>
                                 <!-- experience-info -->
@@ -283,7 +286,7 @@
                         </div>
                         <!-- year -->
                         <div class="year">
-                            <time datetime="2012">2014</time>
+                            <time datetime="2014">2014</time>
                             <div class="experience">
                                 <span class="circle"></span>
                                 <div class="experience-img"><img src="img/dp/appox.jpg" alt="appox"></div>
@@ -346,7 +349,7 @@
                     <div class="grid-items portfolio-section preload">
                         <article class="item column four" data-groups='["fun", "icons"]'>
                             <figure><img src="img/porto/gamifica.jpg" alt=""></figure>
-                            <a class="overlay" href="#">
+                            <a class="overlay" href="#work">
                                 <div class="overlay-content">
                                     <div class="post-type"><i class="icon-game-controller"></i></div>
                                     <h2>Gamifica (WIP)</h2>
@@ -358,7 +361,7 @@
                         </article>
                         <article class="item column eight" data-groups='["lightbox", "minimal"]'>
                             <figure><img src="img/porto/cara.gif" alt=""></figure>
-                            <a class="overlay" href="#">
+                            <a class="overlay" href="#work">
                                 <div class="overlay-content">
                                     <div class="post-type"><i class="icon-magic-wand"></i></div>
                                     <h2>CaraExpress</h2>
@@ -370,7 +373,7 @@
                         </article>
                         <article class="item column four" data-groups='["infographics", "web-design"]'>
                             <figure><img src="img/porto/sociomusic.jpg" alt=""></figure>
-                            <a class="overlay" href="#">
+                            <a class="overlay" href="#work">
                                 <div class="overlay-content">
                                     <div class="post-type"><i class="icon-shuffle"></i></div>
                                     <h2>UI for a music app</h2>
@@ -382,7 +385,7 @@
                         </article>
                         <article class="item column four" data-groups='["fun", "icons"]'>
                             <figure><img src="img/porto/effisink.jpg" alt=""></figure>
-                            <a class="overlay" href="#">
+                            <a class="overlay" href="#work">
                                 <div class="overlay-content">
                                     <div class="post-type"><i class="icon-drop"></i></div>
                                     <h2>effiClean</h2>
@@ -394,7 +397,7 @@
                         </article>
                         <article class="item column four" data-groups='["advertising", "lightbox", "web-design"]'>
                             <figure><img src="img/porto/plug.jpg" alt=""></figure>
-                            <a class="overlay" href="#">
+                            <a class="overlay" href="#work">
                                 <div class="overlay-content">
                                     <div class="post-type"><i class="icon-energy"></i></div>
                                     <h2>smartPlug</h2>
@@ -406,7 +409,7 @@
                         </article>
                         <article class="item column four" data-groups='["web-design", "minimal"]'>
                             <figure><img src="img/porto/rate.jpg" alt=""></figure>
-                            <a class="overlay" href="#">
+                            <a class="overlay" href="#work">
                                 <div class="overlay-content">
                                     <div class="post-type"><i class="icon-emoticon-smile"></i></div>
                                     <h2>Magazine UI</h2>
@@ -418,7 +421,7 @@
                         </article>
                         <article class="item column four" data-groups='["web-design", "minimal"]'>
                             <figure><img src="img/porto/scrub.jpg" alt=""></figure>
-                            <a class="overlay" href="#">
+                            <a class="overlay" href="#work">
                                 <div class="overlay-content">
                                     <div class="post-type"><i class="icon-drop"></i></div>
                                     <h2>Scrubber</h2>
@@ -430,7 +433,7 @@
                         </article>
                         <article class="item column four" data-groups='["web-design", "minimal"]'>
                             <figure><img src="img/porto/feed.jpg" alt=""></figure>
-                            <a class="overlay" href="#">
+                            <a class="overlay" href="#work">
                                 <div class="overlay-content">
                                     <div class="post-type"><i class="icon-user-follow"></i></div>
                                     <h2>SocioMob</h2>
@@ -442,7 +445,7 @@
                         </article>
                         <article class="item column four" data-groups='["web-design", "minimal"]'>
                             <figure><img src="img/porto/iot.jpg" alt=""></figure>
-                            <a class="overlay" href="#">
+                            <a class="overlay" href="#work">
                                 <div class="overlay-content">
                                     <div class="post-type"><i class="icon-fire"></i></div>
                                     <h2>Caspo stove</h2>
@@ -454,7 +457,7 @@
                         </article>
                         <article class="item column four" data-groups='["web-design", "minimal"]'>
                             <figure><img src="img/porto/ard.jpg" alt=""></figure>
-                            <a class="overlay" href="#">
+                            <a class="overlay" href="#work">
                                 <div class="overlay-content">
                                     <div class="post-type"><i class="icon-support"></i></div>
                                     <h2>iot walking stick</h2>
@@ -466,7 +469,7 @@
                         </article>
                         <article class="item column four" data-groups='["web-design", "minimal"]'>
                             <figure><img src="img/porto/3dpro.jpg" alt=""></figure>
-                            <a class="overlay" href="#">
+                            <a class="overlay" href="#work">
                                 <div class="overlay-content">
                                     <div class="post-type"><i class="icon-pie-chart"></i></div>
                                     <h2>Music Visualizer</h2>
@@ -478,7 +481,7 @@
                         </article>
                         <article class="item column four" data-groups='["web-design", "minimal"]'>
                             <figure><img src="img/porto/knob2.jpg" alt=""></figure>
-                            <a class="overlay" href="#">
+                            <a class="overlay" href="#work">
                                 <div class="overlay-content">
                                     <div class="post-type"><i class="icon-equalizer"></i></div>
                                     <h2>Knob for IoT stove</h2>
@@ -495,24 +498,16 @@
                 <!-- row-content -->
             </section>
             <!-- row -->
-            <section class="row section text-light" style="background-color:#333;">
-                <div class="row-content buffer even clear-after">
-                    <div class="slogan animation">
-                        <h3>We keep moving forward, opening new doors, and doing new things,   because we're curious and curiosity keeps leading us down new paths.</h3>
-                        <p>- Walt Disney</p>
-                    </div>
-                </div>
+              <section class="row section">
+                <div class="map" id="map_1" data-maplat="9.495871" data-maplon="76.562564" data-mapzoom="3" data-color="aqua" data-height="10" data-img="img/marker.png" data-info="From Kerala, India"></div>
             </section>
-            <!-- slogan -->
+           <!--map -->
             <section class="row section" id="contact">
                 <div class="row-content buffer even clear-after">
                     <div class="section-title">
                         <h3>Contact Me</h3></div>
                     <div class="column nine">
-                        <br>
-                        <br>
-                        <br>
-                        <br>
+                    <br><br><br>
                         <section class="row section call-to-action">
                             <div class="row-content buffer even animation">
                                 <p>Want to know more ?</p>
@@ -522,12 +517,13 @@
                     </div>
                     <div class="column three last">
                         <div class="widget">
-                            <p>I’m an experienced and passionate user experience designer with interaction design background. And I love solving problem and creating meaningful interactions.
+                            <p>Loves solving problem. When I am not solving problems I play around with frameworks like arduino, polymer, angular...
                             </p>
+                            <p>Familiar with Sketch, Photoshop, After-Effects, Illustrator...</p>
                             <h4>Location</h4>
                             <p>
-                                Zircon society
-                                <br> Viman Nagar, Pune
+                                Sector 7
+                                <br> HSR Layout, Bengaluru
                                 <br> India
                             </p>
                             
@@ -535,10 +531,9 @@
                         <div class="widget">
                             <h4>Social</h4>
                             <ul class="inline meta-social">
-                                
+                                <li><a href="https://in.linkedin.com/in/paulvjohn" class="linkedin-share border-box"><i class="fa fa-linkedin fa-lg"></i></a></li>
                                 <li><a href="https://in.pinterest.com/paulvjohn/" class="pinterest-share border-box"><i class="fa fa-pinterest fa-lg"></i></a></li>
                                 <li><a href="https://github.com/paulvjohn/linker" class="github-share border-box"><i class="fa fa-github fa-lg"></i></a></li>
-                                <li><a href="https://in.linkedin.com/in/paulvjohn" class="linkedin-share border-box"><i class="fa fa-linkedin fa-lg"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -546,9 +541,16 @@
             </section>
             <div class="g-plusone" data-annotation="inline" data-width="300"></div>
             <div class="fb-like" data-href="https://www.facebook.com/pauljohnux" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
-            <section class="row section">
-                <div class="map" id="map_1" data-maplat="9.495871" data-maplon="76.562564" data-mapzoom="3" data-color="aqua" data-height="10" data-img="img/marker.png" data-info="From Kerala, India"></div>
+             <section class="row section text-light" style="background-color:#333;">
+                <div class="row-content buffer even clear-after">
+                    <div class="slogan animation">
+                        <p>"We keep moving forward, opening new doors, and doing new things, because we're curious and curiosity keeps leading us down new paths."</p>
+                        <h5>- Walt Disney</h5>
+                    </div>
+                </div>
             </section>
+            <!-- slogan -->
+          
         </div>
         <!-- id-main -->
     </main>
