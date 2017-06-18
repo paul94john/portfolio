@@ -406,8 +406,8 @@ jQuery(document).ready(function(e) {
                 k = "#efa7cf",
                 _ = "#E6E9ED",
                 x = "#F5F7FA",
-                $ = "#AAB2BD",
-                I = "#CCD1D9",
+                $ = "#333333",
+                I = "#F5F5F5",
                 S = "#434A54",
                 z = "#5f656d";
             if ("red" == $map_color) var A = [{
