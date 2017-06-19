@@ -4,10 +4,18 @@ body {
 }
 video {
     max-width: 400px;
+    box-shadow: 0 12px 39px 8px rgba(201,201,201,0.50);
   width: 100%    !important;
   height: auto   !important;
+  border-radius: 0 0 8px 8px;
 }
-
+skillcard{
+background: #FFFFFF;
+box-shadow: 0 10px 10px 0 rgba(214,214,214,0.50);
+padding: 16px;
+Height: Auto;
+Width: Auto;
+}
 .centertxt,
 .spinner {
     text-align: center
@@ -15,6 +23,7 @@ video {
 
 .owl-controls,
 .spinner {
+    user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none
 }
@@ -34,7 +43,8 @@ nav .sub-arrow {
 .widget h4,
 input.button,
 nav>ul>li {
-    text-transform: uppercase
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
 #brand,
@@ -187,7 +197,7 @@ textarea:not([type=button]):focus {
 
 header.fixed-header.transparent.light nav>ul>li:hover>a,
 nav>ul>li:hover>a {
-    border-bottom: 2px solid #333
+    border-bottom: 1px solid #333
 }
 
 img {
@@ -464,7 +474,7 @@ nav>ul>li {
 
 nav>ul>li {
     padding: 0 .778em;
-    font-weight: 700;
+    font-weight: 400;
     font-size: .778em;
     cursor: pointer
 }
@@ -474,7 +484,8 @@ nav>ul>li:last-child {
 }
 
 header.transparent.light nav>ul>li:hover>a {
-    border-bottom: 2px solid #fff
+    border-bottom: 1px solid #fff;
+    font-weight: 400
 }
 
 nav li {
@@ -1270,6 +1281,7 @@ nav ul.sub-menu>li:last-child>a {
 }
 
 .dribbble-items .item {
+    transform: scale3d(1, 1, 1);
     -webkit-transform: scale3d(1, 1, 1)
 }
 
@@ -1926,7 +1938,7 @@ input.button {
     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
     box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
     text-align: center;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 16px
 }
 
@@ -4412,6 +4424,7 @@ only screen and (min-width:48em) {
 
 .owl-carousel {
     width: 100%;
+    touch-action: pan-y;
     -ms-touch-action: pan-y
 }
 
