@@ -9,13 +9,21 @@ video {
   height: auto   !important;
   border-radius: 0 0 8px 8px;
 }
-skillcard{
-background: #FFFFFF;
-box-shadow: 0 10px 10px 0 rgba(214,214,214,0.50);
-padding: 16px;
-Height: Auto;
-Width: Auto;
+.skillup{
+    box-shadow: 0 12px 39px 8px rgba(201,201,201,0.50);
+/*border:1px solid black;*/
+padding: 1em;
+margin-bottom: 1em;
+text-align: center;
+border: 2px solid #333333;
 }
+
+.skillup:hover{
+      outline: solid #333333 4px;
+      outline-offset: -5px;
+}
+
+
 .centertxt,
 .spinner {
     text-align: center

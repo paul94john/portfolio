@@ -1167,26 +1167,7 @@ jQuery(document).ready(function(e) {
             l()
         })
     }
-    var K = e(".chart"),
-        V = e(".chart-content"),
-        X = K.parent();
-    K.length && (p(), e(window).resize(p), X.each(function() {
-        e(this).onScreen({
-            doIn: function() {
-                e(this).find(".chart").easyPieChart({
-                    scaleColor: !1,
-                    lineWidth: 12,
-                    size: 178,
-                    trackColor: !1,
-                    lineCap: "square",
-                    animate: 2e3,
-                    onStep: function(i, t, a) {
-                        e(this.el).find(".percent").text(Math.round(a))
-                    }
-                })
-            }
-        }), e(this).find(".chart").wrapAll('<div class="centertxt" />')
-    }));
+
     var ei = e(".count-item");
     ei.length && d();
     var ii = e(".timeline"),
