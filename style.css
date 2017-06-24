@@ -3,10 +3,11 @@ body {
     background-color: #fbfbfb
 }
 video {
-    max-width: 400px;
-    box-shadow: 0 12px 39px 8px rgba(201,201,201,0.50);
+box-shadow: 0 12px 39px 8px rgba(201,201,201,0.50);
+max-width: 400px;
   width: 100%    !important;
   height: auto   !important;
+  margin-bottom: 1em;
   border-radius: 0 0 8px 8px;
 }
 .skillup{
